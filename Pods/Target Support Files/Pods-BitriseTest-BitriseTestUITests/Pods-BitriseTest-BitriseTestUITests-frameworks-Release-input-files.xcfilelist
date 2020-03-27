@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-BitriseTest-BitriseTestUITests/Pods-BitriseTest-BitriseTestUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework

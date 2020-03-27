@@ -7,6 +7,7 @@ target 'BitriseTest' do
 
   # Pods for BitriseTest
     pod 'Alamofire', '~> 5.0'
+    pod 'Kingfisher', '~> 5.0'
 
   target 'BitriseTestTests' do
     inherit! :search_paths
