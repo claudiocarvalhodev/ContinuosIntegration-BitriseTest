@@ -15,6 +15,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    func sum(_ num1: Double, with num2: Double) -> Double {
+        return num1 + num2
+    }
 }
 
