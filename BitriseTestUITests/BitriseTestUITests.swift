@@ -10,12 +10,12 @@ import XCTest
 
 class BitriseTestUITests: XCTestCase {
 
-    let app = XCUIApplication()
+    let application = XCUIApplication()
     
     override func setUp() {
         super.setUp()
         continueAfterFailure = false
-        app.launch()
+        application.launch()
     }
     
     override func tearDown() {
@@ -25,11 +25,11 @@ class BitriseTestUITests: XCTestCase {
     func testFixedComponentsOnScreenExists() {
         let exists = NSPredicate(format: "exists == true")
         
-        expectation(for: exists, evaluatedWith: app.staticTexts["Continuous Integration"]) { () -> Bool in
+        expectation(for: exists, evaluatedWith: application.staticTexts["Continuous Integration"]) { () -> Bool in
             return true
         }
         
-        expectation(for: exists, evaluatedWith: app.buttons["Automating Everything"]) { () -> Bool in
+        expectation(for: exists, evaluatedWith: application.buttons["Automating Everything"]) { () -> Bool in
             return true
         }
         
