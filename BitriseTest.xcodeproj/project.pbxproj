@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		912F6F46242D8B9000F6064A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 912F6F44242D8B9000F6064A /* LaunchScreen.storyboard */; };
 		912F6F51242D8B9000F6064A /* BitriseTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912F6F50242D8B9000F6064A /* BitriseTestTests.swift */; };
 		912F6F5C242D8B9000F6064A /* BitriseTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912F6F5B242D8B9000F6064A /* BitriseTestUITests.swift */; };
+		912F6F6A242D996B00F6064A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 912F6F69242D996B00F6064A /* README.md */; };
 		B7270A8BB9A3378792559460 /* Pods_BitriseTest_BitriseTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93A0E1191957FB5B3DD848B /* Pods_BitriseTest_BitriseTestUITests.framework */; };
 		C0421AE97B67302CCD2E423D /* Pods_BitriseTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A103CD026B63420693787262 /* Pods_BitriseTestTests.framework */; };
 		CE5F13CBFA14921ED479ED58 /* Pods_BitriseTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13646E8BCC1FC3EF01BABEB8 /* Pods_BitriseTest.framework */; };
@@ -55,6 +56,7 @@
 		912F6F57242D8B9000F6064A /* BitriseTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitriseTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		912F6F5B242D8B9000F6064A /* BitriseTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitriseTestUITests.swift; sourceTree = "<group>"; };
 		912F6F5D242D8B9000F6064A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		912F6F69242D996B00F6064A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9A847CE0FC5AF81413C143C3 /* Pods-BitriseTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitriseTestTests.debug.xcconfig"; path = "Target Support Files/Pods-BitriseTestTests/Pods-BitriseTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A103CD026B63420693787262 /* Pods_BitriseTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitriseTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A233A67FF65D05308A17C5DD /* Pods-BitriseTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitriseTest.debug.xcconfig"; path = "Target Support Files/Pods-BitriseTest/Pods-BitriseTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		912F6F2D242D8B8F00F6064A = {
 			isa = PBXGroup;
 			children = (
+				912F6F69242D996B00F6064A /* README.md */,
 				912F6F38242D8B8F00F6064A /* BitriseTest */,
 				912F6F4F242D8B9000F6064A /* BitriseTestTests */,
 				912F6F5A242D8B9000F6064A /* BitriseTestUITests */,
@@ -165,7 +168,6 @@
 				9A847CE0FC5AF81413C143C3 /* Pods-BitriseTestTests.debug.xcconfig */,
 				4CD45301A1D5DC0950DD60FD /* Pods-BitriseTestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -181,6 +183,7 @@
 				912F6F33242D8B8F00F6064A /* Frameworks */,
 				912F6F34242D8B8F00F6064A /* Resources */,
 				9F9497F0FFD795A166F884BB /* [CP] Embed Pods Frameworks */,
+				912F6F6B242DA8B900F6064A /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -280,6 +283,7 @@
 			files = (
 				912F6F46242D8B9000F6064A /* LaunchScreen.storyboard in Resources */,
 				912F6F43242D8B9000F6064A /* Assets.xcassets in Resources */,
+				912F6F6A242D996B00F6064A /* README.md in Resources */,
 				912F6F41242D8B8F00F6064A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +365,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		912F6F6B242DA8B900F6064A /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		9F9497F0FFD795A166F884BB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
